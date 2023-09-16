@@ -1,0 +1,21 @@
+﻿<Window x:Class="WinOpenPortsScaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinOpenPortsScaner"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <Button x:Name="BTNScan" Content="Scan" Click="BTNScan_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="BTNProcessInfo" Content="Process Info" Margin="5,0,0,0" Click="BTNProcessInfo_Click"/>
+            <Button x:Name="BTNRemoteInfo" Content="Remote EndPoint Info" Margin="5,0,0,0" Click="BTNRemoteInfo_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="dataGrid" Grid.Row="1" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" SelectionUnit="Cell"/>
+    </Grid>
+</Window>
