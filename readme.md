@@ -1,4 +1,4 @@
-#WinOpenPortsScaner
+# WinOpenPortsScaner
 
 This is a simple scanner of open TCP/UDP ports, with the ability to obtain basic information about processes and remote endpoints.
 
